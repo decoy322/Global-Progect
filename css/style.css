@@ -1,35 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
-/*404 error*/
+html, body {
+    height: 100%;
+}
 
-.wraper__404 {
-	display: block;
+/*404 error*/
+.fullwrapp {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+.wrapper__404 {
 	background-image: url(../images/error.jpg);
 	background-repeat: no-repeat;
-	flex-direction: column;
-    height: 1080px;
+    background-size: 100%;
+    height: 666px;
 }
 .back {
-	display: flex;
-    background-color: #7040b1;
-    width: 15%;
-    padding: 1%;
-    border-radius: 5%;
-    margin: 1% 1% 0 0;
-    -webkit-box-shadow: 0px 0px 8px 8px rgba(25, 28, 30, 0.2);
-    -moz-box-shadow: 0px 0px 8px 8px rgba(25, 28, 30, 0.2);
-    box-shadow: 0px 0px 8px 8px rgba(25, 28, 30, 0.2);
+    background-color: #dd962c;
+    border-radius: 10px;
+    margin-left: 10%;
 }
-.row404 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
 /*About__us*/
 
 .about__us {
+    background-image: url(../images/rpbg.png);
+    background-repeat: repeat;
+    padding: 12% 15% 12% 15%;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+}
+.contacts_wrapper {
     background-image: url(../images/about_us.jpg);
     padding: 8% 15% 12% 15%;
     background-repeat: no-repeat;
@@ -54,7 +62,7 @@
 }
 .infograpfic__badge {
     width: 100%;
-    max-width: 109px;
+    max-width: 130px;
     padding: .5rem .5rem .5rem .5rem;
     margin-right: .625rem;
     display: inline-block;
@@ -88,7 +96,7 @@ body {
 	margin: 0;
 }
 .wrapper {
-    min-height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 	background-color: #fff;
@@ -97,7 +105,9 @@ header {
 	display: block;
     background-color: #101010;
     min-height: 60px;
-    padding-top: 2%;
+}
+.link a:hover {
+    color: #0d6efd;
 }
 /*text move text*/
 @keyframes moveLeft {
@@ -117,6 +127,7 @@ nav {
 }
 a {
 	color: #fff;
+    text-decoration: none;
 }
 nav a {
 	color: #fff;
@@ -126,9 +137,10 @@ p {
 }
 .travel__block {
 	min-height: 480px;
-	max-width: 1920px;
+	max-width: 100%;
 	background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
+    background-size: 100%;
 	padding: 5% 0% 0% 12%;
     -webkit-box-shadow: 0px 13px 11px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 13px 11px 0px rgba(34, 60, 80, 0.2);
@@ -170,7 +182,7 @@ p {
 .europe {
     display: flex;
     background-color: #dd962c;
-    max-width: 560px;
+    max-width: 705px;
     margin: 0 0% 2% 0%;
     padding: 2%;
     flex-direction: column;
@@ -181,9 +193,7 @@ p {
     box-shadow: 0px 13px 11px 0px rgba(34, 60, 80, 0.2);
 }
 .europe a {
-    display: block;
     text-align: center;
-    height: 100%;
 }
 .europe:hover {
     transform: scale(1.1);
@@ -257,26 +267,106 @@ h1, h2, h3 {
 	color: #fff;
 }
 h2, h3 {
-	font: 700 70px Comfortaa;
+	font: 700 38px Comfortaa;
 }
 h4 {
     font: 400 30px Comfortaa;
 }
+.btn_modal {
+    font: 400 24px Comfortaa;
+}
+/*for registration*/
+.form-width {max-width: 25rem;}
+.has-float-label {
+ position: relative; }
+ .has-float-label label {
+ position: absolute;
+ left: 0;
+ top: 0;
+ cursor: text;
+ font-size: 75%;
+ opacity: 1;
+ -webkit-transition: all .2s;
+ transition: all .2s;
+ top: .5em;
+ left: 0.75rem;
+ z-index: 3;
+ line-height: 1;
+ padding: 0 1px; }
+ .has-float-label label::after {
+ content: " ";
+ display: block;
+ position: absolute;
+ background: white;
+ height: 2px;
+ top: 50%;
+ left: -.2em;
+ right: -.2em;
+ z-index: -1; }
+ .has-float-label .form-control::-webkit-input-placeholder {
+ opacity: 1;
+ -webkit-transition: all .2s;
+ transition: all .2s; }
+ .has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+ opacity: 0; }
+ .has-float-label .form-control:placeholder-shown:not(:focus) + label {
+ font-size: 150%;
+ opacity: .5;
+ top: .3em; }
+
+.input-group .has-float-label {
+ display: table-cell; }
+ .input-group .has-float-label .form-control {
+ border-radius: 0.25rem; }
+ .input-group .has-float-label:not(:last-child) .form-control {
+ border-bottom-right-radius: 0;
+ border-top-right-radius: 0; }
+ .input-group .has-float-label:not(:first-child) .form-control {
+ border-bottom-left-radius: 0;
+ border-top-left-radius: 0;
+ margin-left: -1px; }
+.regform {
+    margin-top: 7%;
+}
+a {
+    text-decoration: none;
+}
+/*footer {
+    background-color: #000;
+    min-height: 60px;
+    padding: 1% 0 1% 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}*/
 footer {
-	background-color: #000;
-	min-height: 60px;
-	padding-top: 20px;
-	padding-left: 20px;
+    background-color: #000;
+    min-height: 60px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
 }
 @media screen and (max-width: 1405px) {
     .chose-europe {
-        margin: 0% 0% 2% 0%;
+        margin: 0 0 2% 0;
+    }
+    .about__us {
+        height: 900px;
+
     }
 }
 @media screen and (max-width: 1103px) {
     .europe {
         width: 100%;
-        margin: 0% 5% 2% 5%;
+        margin: 0 5% 2% 5%;
     }
     .chose-europe {
         width: 80%;
@@ -284,7 +374,13 @@ footer {
 }
 @media screen and (max-width: 1000px) {
     a {
-        font: 400 16px Comfortaa;
+        font: 400 28px Comfortaa;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
     }
     .chose-europe, .chose-europe:hover {
         flex-direction: column;
@@ -295,6 +391,21 @@ footer {
     .back {
         width: 30%;
     }
+    .about__us {
+        padding-top: 18%
+    }
+}
+@media screen and (max-width: 900px) {
+    .heder-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 760px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 600px) {
     nav {
@@ -303,13 +414,9 @@ footer {
         align-content: center;
         align-items: center;
     }
+}
     .nav-link {
         display: block;
-        margin: 2% 0 2% 0;
-    }
-    .travel__block {
-    max-height: 100%;
-    max-width: 100%;
     }
     .chose-europe {
         width: 100%;

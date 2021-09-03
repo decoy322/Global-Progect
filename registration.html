@@ -4,18 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-country.css">
     <link rel="icon" type="image" href="images/favicon.png">
-	<title>О нас</title>
+	<title>Контакты</title>
 </head>
 <body>
-
-	    <div class="container-fluid">
+    	<div class="container-fluid">
         <div class="row">
-            <div class="col-xxl-12 bg-black text-white p-4 d-flex justify-content-around align-items-center">
+            <div class="col-xxl-12 header black text-white p-5 d-flex justify-content-around">
                 <a href="index.html">Главная</a>
                 <a href="about_us.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
+                <a href="contacts.html">Контакты</a>
                 <!-- Button trigger modal -->
         <button type="button" class="btn btn-body text-white btn_modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
            Авторизоватся
@@ -50,43 +49,51 @@
               </div>
             </div>
           </div>
-          <a href="registration.html">Зарегистрироватся</a>
+                <a href="registration.html">Зарегистрироватся</a>
             </div>
         </div>
     </div>
-
-    	<div class="about__us">
-    		<h1 class="abouth1">О нас</h1>
-    		<div class="about__us__info">
-    			<div class="infograpfic__item">
-    				<div class="infograpfic__badge">
-    					№3
-    				</div>
-    				<div class="infograpfic__text">
-    					на рынке турестического бизнера
-    				</div>
-    			</div>
-    		    <div class="infograpfic__item">
-    		    	<div class="infograpfic__badge">
-    					97%
-    				</div>
-    				<div class="infograpfic__text">
-    					довольных туристов
-    				</div>
-    		    </div>
-    		    <div class="infograpfic__item">
-    		    	<div class="infograpfic__badge">
-    					1322
-    				</div>
-    				<div class="infograpfic__text">
-    				    туриста путешествуют <br> с нами каждый день
-    				</div>
-    		    </div>
-    		</div>
-    	</div>
-
+        <div class="px-1 py-3 regform d-flex justify-content-around">
+            <form class="card card-block mx-auto bg-faded form-width">
+                <legend class="mb-1 text-center">Регистрация</legend>
+                    <div class="form-group input-group mb-3 p-3">
+                        <span class="has-float-label">
+                        <input class="form-control" id="first" type="text" placeholder="Имя"/>
+                        <label for="first">Имя</label>
+                        </span>
+                        <span class="has-float-label mt-3">
+                        <input class="form-control" id="last" type="text" placeholder="Фамилия"/>
+                        <label for="last">Фамилия</label>
+                        </span>
+                    </div>
+                        <div class="form-group input-group my-3 mx-3">
+                            <span class="has-float-label">
+                            <input class="form-control" id="email" type="email" placeholder="name@mail.com"/>
+                            <label for="email">E-mail</label>
+                            </span>
+                        </div>
+                            <div class="form-group has-float-label my-3 mx-3">
+                            <input class="form-control" id="password" type="password" placeholder="••••••••"/>
+                            <label for="password">Пароль</label>
+                            </div>
+                                <div class="form-group has-float-label my-3 mx-3">
+                                    <input class="form-control" id="password" type="password" placeholder="••••••••"/>
+                                    <label for="password">Пароль повторно</label>
+                                </div>
+                                    <div class="form-group my-3 mx-3">
+                                        <label class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" type="checkbox"/>
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Получать новости</span>
+                                        </label>
+                                    </div>
+                                        <div class="text-center my-3">
+                                            <button class="btn btn-block btn-primary" type="submit">Регистрация</button>
+                                        </div>
+            </form>
+                </div>
         <footer class="text-white ft-down">
-           <h1>Cheap-Airlines</h1>
+    	   <h1>Cheap-Airlines</h1>
                 <p>Где-то здесь содерживоме футера</p>
         </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image" href="images/favicon.png">
 	<title>Восточная Европа</title>
@@ -11,13 +12,50 @@
 
     <div class="wrapper">
     	<header>
-    		<nav>
-          <a href="index.html">Главная</a>
-    			<a href="about_us.html">О нас</a>
-    			<a href="404.html">Контакты</a>
-    			<a href="404.html">Авторизоватся</a>
-    			<a href="404.html">Зарегестрироватся</a>
-    		</nav>
+    		<div class="container-fluid">
+        <div class="row">
+            <div class="col-xxl-12 bg-black header text-white p-4 d-flex justify-content-around align-items-center">
+                <a href="index.html">Главная</a>
+                <a href="about_us.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+                <!-- Button trigger modal -->
+        <button type="button" class="btn btn-body text-white btn_modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           Авторизоватся
+        </button>
+        <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Авторизуйтесь</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="text-secondary">Войдите в свою учетную запись</p>
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваша почта" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">Мы никому не сообщаем данные о вашей почте</div>
+                    </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                      <input type="password" placeholder="пароль" class="form-control" id="exampleInputPassword1">
+                  </div>
+                    <button type="submit" class="btn btn-primary">Забыли пароль?</button>
+                  </form>
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary">Войти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="registration.html">Зарегистрироватся</a>
+            </div>
+        </div>
+    </div>
     	</header>
         <div class="country">
     		<div class="chose-europe">
@@ -103,9 +141,9 @@
               </div>
     	</div>
     <footer>
-    	<h1>Cheep-Airlines</h1>
+    	<h1>Cheap-Airlines</h1>
       <p>Где-то здесь содерживоме футера</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
